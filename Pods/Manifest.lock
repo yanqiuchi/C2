@@ -1,0 +1,16 @@
+PODS:
+  - SwiftOTP (3.0.0)
+
+DEPENDENCIES:
+  - SwiftOTP
+
+SPEC REPOS:
+  trunk:
+    - SwiftOTP
+
+SPEC CHECKSUMS:
+  SwiftOTP: ec3848f12a4541f29d96f6a0fe63dcbb8448d96f
+
+PODFILE CHECKSUM: 71ea15486ec4c914fcaceacfb28cee0de4be043b
+
+COCOAPODS: 1.12.1

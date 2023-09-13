@@ -1,0 +1,983 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E28D681B18E9CBF123F93907E6A0AA4 /* UInt64+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6966923F287663DFC0C16B10D1FE3074 /* UInt64+Data.swift */; };
+		20396EF5D1167E985CC41C7DCC48FA22 /* Pods-C2-C2UITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F654F333BE63FB683CC60751AF2A22 /* Pods-C2-C2UITests-dummy.m */; };
+		2F01344FAFFEC5DDF0622A910C972C62 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8242ADBAFA7C34DE37DEB5AF558A3D4 /* Generator.swift */; };
+		301889C4A7003B141A5BE04F21750FF9 /* TOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DE879DFFB622BEBE2C6048844ED7E /* TOTP.swift */; };
+		38DC4FC0F13E28D8F9FD61EFEF642DEC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
+		39FB9CA56013629EE11AE894667CCED5 /* SwiftOTP-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5ABD328EAE87A96CE2158F362987CB /* SwiftOTP-dummy.m */; };
+		45ADE8B14CDA2E66AC3E034FA58F5097 /* Pods-C2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52A6450E8FA2837713DDA78D9F153668 /* Pods-C2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4982B7E69E73F3F896B93BACA186F1EA /* Pods-C2-C2UITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC6EC095002C80D83F142AF4BC405E61 /* Pods-C2-C2UITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5576F9C3894EB7AC279C2D93F64D9826 /* HOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543FC5AB6E09F995A965DA873B853524 /* HOTP.swift */; };
+		5AF9152344EAFDA14E622353B66A03C7 /* Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333A07BD0CBB72E4331BCA51EB905CC9 /* Base32.swift */; };
+		70FECD8C7F6A0ED65E10261E0A8F2130 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
+		73FC16DC5E3FF103B25DCC14E4F0450F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486F6AA76380CDAE37AE682AEF8D38A1 /* StringExtension.swift */; };
+		7667495CDD1ADE2ADEA771BFCE6955C8 /* SwiftOTP-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC61B97E65386210390F785002F606F /* SwiftOTP-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9080C95E97DC959F00E304D8F75F4442 /* SwiftOTP.h in Headers */ = {isa = PBXBuildFile; fileRef = 58BAECCAC26525E2D786F3E3C340A7E9 /* SwiftOTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACC30AF2F66F541413A3196FCA3675A1 /* Pods-C2Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BCF834C6494F7C7F81C7443D8137BB2 /* Pods-C2Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5CE947A83B20922B5270C0264D8DDB6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
+		B965CFC7B975246D4713C48610B1D5A4 /* OTPAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828B010FDF004E9B172ACEBA3E431BFA /* OTPAlgorithm.swift */; };
+		CA5A025C9D344E208C8068B6CC30BD83 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
+		DC466B8B4F50306F2070378709C5AF5E /* Pods-C2Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E62800857C5699BE349850B5E6229CF /* Pods-C2Tests-dummy.m */; };
+		F28621FCDA609BDB06AAD999CAAA90AB /* Pods-C2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4F87A6E210F71F952F56E719EEE2 /* Pods-C2-dummy.m */; };
+		FD5AB3F10529100E28001C45D7E69B9B /* Data+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FE82F7074B884CDC4A933B0F755E6C /* Data+Utilities.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1609BCDC06680E52BE20C966856AA09B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58B9AD85FE03CF119B42720114874474;
+			remoteInfo = SwiftOTP;
+		};
+		53DF963531848EA131FB86DD4BBA6B1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58B9AD85FE03CF119B42720114874474;
+			remoteInfo = SwiftOTP;
+		};
+		81F22996DC156BE9EF2C8986B49A05AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A5AD03D87392417A0C771CF04DE71CB;
+			remoteInfo = "Pods-C2";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0572A8BE02A96A46C047A0B8DF66F5F4 /* Pods-C2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-C2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0A28265CA12893EBE3A4F1E4A458B05C /* Pods-C2-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-C2-acknowledgements.plist"; sourceTree = "<group>"; };
+		0C2B27F6EAFDB08DA37574A7AF869CDF /* Pods-C2-C2UITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-C2-C2UITests-Info.plist"; sourceTree = "<group>"; };
+		0DF54E97B7EAB1BB42A4DE67A3F1C7A4 /* SwiftOTP.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftOTP.modulemap; sourceTree = "<group>"; };
+		0E1F4F87A6E210F71F952F56E719EEE2 /* Pods-C2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-C2-dummy.m"; sourceTree = "<group>"; };
+		10E24AB39AC8F2B344EDA50171BD23E9 /* Pods-C2Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-C2Tests-Info.plist"; sourceTree = "<group>"; };
+		178462B9470125F074933FCCC72C28ED /* SwiftOTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftOTP.release.xcconfig; sourceTree = "<group>"; };
+		1B62C1797FFB0745028DD0D0551A3A0C /* SwiftOTP-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftOTP-prefix.pch"; sourceTree = "<group>"; };
+		220C1BFC9728831A3B2996AE7B6F0CAF /* Pods-C2-C2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-C2-C2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		23BA162703DC02CE41386C7FFB376698 /* Pods-C2-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-C2-Info.plist"; sourceTree = "<group>"; };
+		23F1D8162F3BF2289BE844D4DB6E5DAF /* Pods-C2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-C2.debug.xcconfig"; sourceTree = "<group>"; };
+		289DBDFC2864446A666C27B372F2E5F2 /* Pods-C2-C2UITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-C2-C2UITests-frameworks.sh"; sourceTree = "<group>"; };
+		333A07BD0CBB72E4331BCA51EB905CC9 /* Base32.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Base32.swift; path = SwiftOTP/Base32/Base32.swift; sourceTree = "<group>"; };
+		3BCF834C6494F7C7F81C7443D8137BB2 /* Pods-C2Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-C2Tests-umbrella.h"; sourceTree = "<group>"; };
+		486F6AA76380CDAE37AE682AEF8D38A1 /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = SwiftOTP/Base32/StringExtension.swift; sourceTree = "<group>"; };
+		4E62800857C5699BE349850B5E6229CF /* Pods-C2Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-C2Tests-dummy.m"; sourceTree = "<group>"; };
+		52A6450E8FA2837713DDA78D9F153668 /* Pods-C2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-C2-umbrella.h"; sourceTree = "<group>"; };
+		543FC5AB6E09F995A965DA873B853524 /* HOTP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HOTP.swift; path = SwiftOTP/HOTP.swift; sourceTree = "<group>"; };
+		575204D0A3B7F2F0A93301525486F607 /* Pods_C2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_C2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58BAECCAC26525E2D786F3E3C340A7E9 /* SwiftOTP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftOTP.h; path = SwiftOTP/SwiftOTP.h; sourceTree = "<group>"; };
+		5B54BC82B38A2E802DA68E76892C9281 /* Pods-C2Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-C2Tests.modulemap"; sourceTree = "<group>"; };
+		6966923F287663DFC0C16B10D1FE3074 /* UInt64+Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt64+Data.swift"; path = "SwiftOTP/UInt64+Data.swift"; sourceTree = "<group>"; };
+		6D6B88381C1E54623DE1CDBC2C7F3804 /* Pods-C2Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-C2Tests"; path = Pods_C2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		706FAAB2D11C6EB2C1DB6392EE1CA325 /* Pods-C2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-C2.modulemap"; sourceTree = "<group>"; };
+		71FE82F7074B884CDC4A933B0F755E6C /* Data+Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Utilities.swift"; path = "SwiftOTP/Data+Utilities.swift"; sourceTree = "<group>"; };
+		728DB45987550607DADA1968A48A7123 /* Pods-C2-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-C2-acknowledgements.markdown"; sourceTree = "<group>"; };
+		828B010FDF004E9B172ACEBA3E431BFA /* OTPAlgorithm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OTPAlgorithm.swift; path = SwiftOTP/OTPAlgorithm.swift; sourceTree = "<group>"; };
+		8594072914111AF116F6096344F02136 /* Pods_C2_C2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_C2_C2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		906B4F8881E1F47CA253F59EDEBDC66C /* SwiftOTP */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftOTP; path = SwiftOTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92207E2D5D5DAD4A5875BDCA73D528B5 /* Pods-C2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-C2.release.xcconfig"; sourceTree = "<group>"; };
+		94F654F333BE63FB683CC60751AF2A22 /* Pods-C2-C2UITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-C2-C2UITests-dummy.m"; sourceTree = "<group>"; };
+		9CA370712BE26816CC025123523670EE /* Pods-C2-C2UITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-C2-C2UITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1BBE180314167B412CD6DF9A02548AF /* Pods-C2-C2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-C2-C2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		AD5ABD328EAE87A96CE2158F362987CB /* SwiftOTP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftOTP-dummy.m"; sourceTree = "<group>"; };
+		AFB1C9B8278F5F8F858449AC8DFED9DC /* Pods-C2-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-C2-frameworks.sh"; sourceTree = "<group>"; };
+		BB6DE879DFFB622BEBE2C6048844ED7E /* TOTP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TOTP.swift; path = SwiftOTP/TOTP.swift; sourceTree = "<group>"; };
+		BC5188F5A9A6145C209E3BEBBE0F09C8 /* Pods-C2-C2UITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-C2-C2UITests.modulemap"; sourceTree = "<group>"; };
+		C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		C8242ADBAFA7C34DE37DEB5AF558A3D4 /* Generator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Generator.swift; path = SwiftOTP/Generator.swift; sourceTree = "<group>"; };
+		C85A7F6D52AB9DABE1E0E28C29603510 /* Pods-C2Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-C2Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C910D8CD5593BC2BADE290F933D7137A /* Pods-C2Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-C2Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DAAD7F88DEF2092DA3FF94C49F4607E0 /* Pods-C2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-C2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E49B95166922F741949A57E4DC38ADF0 /* SwiftOTP-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftOTP-Info.plist"; sourceTree = "<group>"; };
+		EC6EC095002C80D83F142AF4BC405E61 /* Pods-C2-C2UITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-C2-C2UITests-umbrella.h"; sourceTree = "<group>"; };
+		F456C6A72490921856B525298F41C508 /* Pods-C2-C2UITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-C2-C2UITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FD8789DB6FE8AFEA849BE781BF15D5AA /* SwiftOTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftOTP.debug.xcconfig; sourceTree = "<group>"; };
+		FDC61B97E65386210390F785002F606F /* SwiftOTP-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftOTP-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C38F55ECA63B6D58A626085C5BFB0CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5CE947A83B20922B5270C0264D8DDB6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A402305500CD0ACEB45A40233FE04E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70FECD8C7F6A0ED65E10261E0A8F2130 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4300D87E47D4D2B37063FE89B14DC55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38DC4FC0F13E28D8F9FD61EFEF642DEC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF72F075CA83C272017538EAFF3096B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5A025C9D344E208C8068B6CC30BD83 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76C6EC8873CC237BFEBC3F0F9BF5D2B2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC91B64BAD399128119DC70A79441D81 /* Pods-C2 */,
+				DFB50DE385938F9AD11D5C9426B602D0 /* Pods-C2-C2UITests */,
+				E42201333B480C2F2F7C124611BE14C1 /* Pods-C2Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7BDB6E7510CD044CAEE9F5AA0AD2653E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				575204D0A3B7F2F0A93301525486F607 /* Pods_C2.framework */,
+				8594072914111AF116F6096344F02136 /* Pods_C2_C2UITests.framework */,
+				6D6B88381C1E54623DE1CDBC2C7F3804 /* Pods-C2Tests */,
+				906B4F8881E1F47CA253F59EDEBDC66C /* SwiftOTP */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC91B64BAD399128119DC70A79441D81 /* Pods-C2 */ = {
+			isa = PBXGroup;
+			children = (
+				706FAAB2D11C6EB2C1DB6392EE1CA325 /* Pods-C2.modulemap */,
+				728DB45987550607DADA1968A48A7123 /* Pods-C2-acknowledgements.markdown */,
+				0A28265CA12893EBE3A4F1E4A458B05C /* Pods-C2-acknowledgements.plist */,
+				0E1F4F87A6E210F71F952F56E719EEE2 /* Pods-C2-dummy.m */,
+				AFB1C9B8278F5F8F858449AC8DFED9DC /* Pods-C2-frameworks.sh */,
+				23BA162703DC02CE41386C7FFB376698 /* Pods-C2-Info.plist */,
+				52A6450E8FA2837713DDA78D9F153668 /* Pods-C2-umbrella.h */,
+				23F1D8162F3BF2289BE844D4DB6E5DAF /* Pods-C2.debug.xcconfig */,
+				92207E2D5D5DAD4A5875BDCA73D528B5 /* Pods-C2.release.xcconfig */,
+			);
+			name = "Pods-C2";
+			path = "Target Support Files/Pods-C2";
+			sourceTree = "<group>";
+		};
+		C5654BCA029E1B8E097BBF69CB99CBD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9D2B81B1C282355D5C54341B7B27ACB /* SwiftOTP */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */,
+				C5654BCA029E1B8E097BBF69CB99CBD3 /* Pods */,
+				7BDB6E7510CD044CAEE9F5AA0AD2653E /* Products */,
+				76C6EC8873CC237BFEBC3F0F9BF5D2B2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DAECCA52676D757F6572A5FC1596A077 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DF54E97B7EAB1BB42A4DE67A3F1C7A4 /* SwiftOTP.modulemap */,
+				AD5ABD328EAE87A96CE2158F362987CB /* SwiftOTP-dummy.m */,
+				E49B95166922F741949A57E4DC38ADF0 /* SwiftOTP-Info.plist */,
+				1B62C1797FFB0745028DD0D0551A3A0C /* SwiftOTP-prefix.pch */,
+				FDC61B97E65386210390F785002F606F /* SwiftOTP-umbrella.h */,
+				FD8789DB6FE8AFEA849BE781BF15D5AA /* SwiftOTP.debug.xcconfig */,
+				178462B9470125F074933FCCC72C28ED /* SwiftOTP.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftOTP";
+			sourceTree = "<group>";
+		};
+		DFB50DE385938F9AD11D5C9426B602D0 /* Pods-C2-C2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC5188F5A9A6145C209E3BEBBE0F09C8 /* Pods-C2-C2UITests.modulemap */,
+				F456C6A72490921856B525298F41C508 /* Pods-C2-C2UITests-acknowledgements.markdown */,
+				9CA370712BE26816CC025123523670EE /* Pods-C2-C2UITests-acknowledgements.plist */,
+				94F654F333BE63FB683CC60751AF2A22 /* Pods-C2-C2UITests-dummy.m */,
+				289DBDFC2864446A666C27B372F2E5F2 /* Pods-C2-C2UITests-frameworks.sh */,
+				0C2B27F6EAFDB08DA37574A7AF869CDF /* Pods-C2-C2UITests-Info.plist */,
+				EC6EC095002C80D83F142AF4BC405E61 /* Pods-C2-C2UITests-umbrella.h */,
+				220C1BFC9728831A3B2996AE7B6F0CAF /* Pods-C2-C2UITests.debug.xcconfig */,
+				A1BBE180314167B412CD6DF9A02548AF /* Pods-C2-C2UITests.release.xcconfig */,
+			);
+			name = "Pods-C2-C2UITests";
+			path = "Target Support Files/Pods-C2-C2UITests";
+			sourceTree = "<group>";
+		};
+		E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2A8756CA1FF5258A0344D53C5C60EC1 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2A8756CA1FF5258A0344D53C5C60EC1 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		E42201333B480C2F2F7C124611BE14C1 /* Pods-C2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5B54BC82B38A2E802DA68E76892C9281 /* Pods-C2Tests.modulemap */,
+				C910D8CD5593BC2BADE290F933D7137A /* Pods-C2Tests-acknowledgements.markdown */,
+				C85A7F6D52AB9DABE1E0E28C29603510 /* Pods-C2Tests-acknowledgements.plist */,
+				4E62800857C5699BE349850B5E6229CF /* Pods-C2Tests-dummy.m */,
+				10E24AB39AC8F2B344EDA50171BD23E9 /* Pods-C2Tests-Info.plist */,
+				3BCF834C6494F7C7F81C7443D8137BB2 /* Pods-C2Tests-umbrella.h */,
+				DAAD7F88DEF2092DA3FF94C49F4607E0 /* Pods-C2Tests.debug.xcconfig */,
+				0572A8BE02A96A46C047A0B8DF66F5F4 /* Pods-C2Tests.release.xcconfig */,
+			);
+			name = "Pods-C2Tests";
+			path = "Target Support Files/Pods-C2Tests";
+			sourceTree = "<group>";
+		};
+		E9D2B81B1C282355D5C54341B7B27ACB /* SwiftOTP */ = {
+			isa = PBXGroup;
+			children = (
+				333A07BD0CBB72E4331BCA51EB905CC9 /* Base32.swift */,
+				71FE82F7074B884CDC4A933B0F755E6C /* Data+Utilities.swift */,
+				C8242ADBAFA7C34DE37DEB5AF558A3D4 /* Generator.swift */,
+				543FC5AB6E09F995A965DA873B853524 /* HOTP.swift */,
+				828B010FDF004E9B172ACEBA3E431BFA /* OTPAlgorithm.swift */,
+				486F6AA76380CDAE37AE682AEF8D38A1 /* StringExtension.swift */,
+				58BAECCAC26525E2D786F3E3C340A7E9 /* SwiftOTP.h */,
+				BB6DE879DFFB622BEBE2C6048844ED7E /* TOTP.swift */,
+				6966923F287663DFC0C16B10D1FE3074 /* UInt64+Data.swift */,
+				DAECCA52676D757F6572A5FC1596A077 /* Support Files */,
+			);
+			path = SwiftOTP;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8C1E68CF40A338A46BBF1AF8A10ACD91 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4982B7E69E73F3F896B93BACA186F1EA /* Pods-C2-C2UITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9967CAD2E3947026B6E21AC1683462B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC30AF2F66F541413A3196FCA3675A1 /* Pods-C2Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D56BC2181C3C9158432F299A99DE620 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45ADE8B14CDA2E66AC3E034FA58F5097 /* Pods-C2-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BDCB7C9552B954E6466F42DBA5C67E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9080C95E97DC959F00E304D8F75F4442 /* SwiftOTP.h in Headers */,
+				7667495CDD1ADE2ADEA771BFCE6955C8 /* SwiftOTP-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		00CBD8E9DAA1CBC297FE67C8B167AE09 /* Pods-C2-C2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D3C07C12BAF03B3612438FD8697A486 /* Build configuration list for PBXNativeTarget "Pods-C2-C2UITests" */;
+			buildPhases = (
+				8C1E68CF40A338A46BBF1AF8A10ACD91 /* Headers */,
+				985695EE1F29974EF1EE965092867D3A /* Sources */,
+				EF72F075CA83C272017538EAFF3096B5 /* Frameworks */,
+				30503AADC2FBA65E13D56D8BD7AE9E82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17A092D68C411A2C2F0DF484F5E99D72 /* PBXTargetDependency */,
+			);
+			name = "Pods-C2-C2UITests";
+			productName = Pods_C2_C2UITests;
+			productReference = 8594072914111AF116F6096344F02136 /* Pods_C2_C2UITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2A5AD03D87392417A0C771CF04DE71CB /* Pods-C2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2C8B6CF55D1A0ED6172DB773F78483E /* Build configuration list for PBXNativeTarget "Pods-C2" */;
+			buildPhases = (
+				9D56BC2181C3C9158432F299A99DE620 /* Headers */,
+				13BCE1D914C842473929F4B2C10E98AE /* Sources */,
+				1C38F55ECA63B6D58A626085C5BFB0CA /* Frameworks */,
+				BDD0BB998BFD0AA358EB41E9340201E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D3F657D4F5F1075D2A9AA01841DCAF7 /* PBXTargetDependency */,
+			);
+			name = "Pods-C2";
+			productName = Pods_C2;
+			productReference = 575204D0A3B7F2F0A93301525486F607 /* Pods_C2.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		58B9AD85FE03CF119B42720114874474 /* SwiftOTP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5BD5F55F16940B917840FC7873AB454 /* Build configuration list for PBXNativeTarget "SwiftOTP" */;
+			buildPhases = (
+				F9BDCB7C9552B954E6466F42DBA5C67E /* Headers */,
+				F2268F7B4C326104A26C36612EE414B6 /* Sources */,
+				2A402305500CD0ACEB45A40233FE04E2 /* Frameworks */,
+				FDC6F722C71482803089283A643F989C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftOTP;
+			productName = SwiftOTP;
+			productReference = 906B4F8881E1F47CA253F59EDEBDC66C /* SwiftOTP */;
+			productType = "com.apple.product-type.framework";
+		};
+		C2D4CD4704E5488E27EF7C8AB9270D80 /* Pods-C2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF3931A8C1E0AAFECE4D7E2C66CD9DEC /* Build configuration list for PBXNativeTarget "Pods-C2Tests" */;
+			buildPhases = (
+				9967CAD2E3947026B6E21AC1683462B0 /* Headers */,
+				55B02EE16D18CE8136463E44AEED1F8A /* Sources */,
+				A4300D87E47D4D2B37063FE89B14DC55 /* Frameworks */,
+				9F63C8A69FDA8FB3E6AB832F396D6252 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9631C7AEFDB121CF5B340F4F77CB089C /* PBXTargetDependency */,
+			);
+			name = "Pods-C2Tests";
+			productName = Pods_C2Tests;
+			productReference = 6D6B88381C1E54623DE1CDBC2C7F3804 /* Pods-C2Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 7BDB6E7510CD044CAEE9F5AA0AD2653E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A5AD03D87392417A0C771CF04DE71CB /* Pods-C2 */,
+				00CBD8E9DAA1CBC297FE67C8B167AE09 /* Pods-C2-C2UITests */,
+				C2D4CD4704E5488E27EF7C8AB9270D80 /* Pods-C2Tests */,
+				58B9AD85FE03CF119B42720114874474 /* SwiftOTP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30503AADC2FBA65E13D56D8BD7AE9E82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F63C8A69FDA8FB3E6AB832F396D6252 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD0BB998BFD0AA358EB41E9340201E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDC6F722C71482803089283A643F989C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13BCE1D914C842473929F4B2C10E98AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28621FCDA609BDB06AAD999CAAA90AB /* Pods-C2-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B02EE16D18CE8136463E44AEED1F8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC466B8B4F50306F2070378709C5AF5E /* Pods-C2Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		985695EE1F29974EF1EE965092867D3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20396EF5D1167E985CC41C7DCC48FA22 /* Pods-C2-C2UITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2268F7B4C326104A26C36612EE414B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AF9152344EAFDA14E622353B66A03C7 /* Base32.swift in Sources */,
+				FD5AB3F10529100E28001C45D7E69B9B /* Data+Utilities.swift in Sources */,
+				2F01344FAFFEC5DDF0622A910C972C62 /* Generator.swift in Sources */,
+				5576F9C3894EB7AC279C2D93F64D9826 /* HOTP.swift in Sources */,
+				B965CFC7B975246D4713C48610B1D5A4 /* OTPAlgorithm.swift in Sources */,
+				73FC16DC5E3FF103B25DCC14E4F0450F /* StringExtension.swift in Sources */,
+				39FB9CA56013629EE11AE894667CCED5 /* SwiftOTP-dummy.m in Sources */,
+				301889C4A7003B141A5BE04F21750FF9 /* TOTP.swift in Sources */,
+				0E28D681B18E9CBF123F93907E6A0AA4 /* UInt64+Data.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17A092D68C411A2C2F0DF484F5E99D72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftOTP;
+			target = 58B9AD85FE03CF119B42720114874474 /* SwiftOTP */;
+			targetProxy = 53DF963531848EA131FB86DD4BBA6B1D /* PBXContainerItemProxy */;
+		};
+		5D3F657D4F5F1075D2A9AA01841DCAF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftOTP;
+			target = 58B9AD85FE03CF119B42720114874474 /* SwiftOTP */;
+			targetProxy = 1609BCDC06680E52BE20C966856AA09B /* PBXContainerItemProxy */;
+		};
+		9631C7AEFDB121CF5B340F4F77CB089C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-C2";
+			target = 2A5AD03D87392417A0C771CF04DE71CB /* Pods-C2 */;
+			targetProxy = 81F22996DC156BE9EF2C8986B49A05AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0769A2B335A0257CD75F57A6B3A2035C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 178462B9470125F074933FCCC72C28ED /* SwiftOTP.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftOTP/SwiftOTP-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftOTP/SwiftOTP-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/SwiftOTP/SwiftOTP.modulemap";
+				PRODUCT_MODULE_NAME = SwiftOTP;
+				PRODUCT_NAME = SwiftOTP;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		081E2358B5FE4FC772230DEF5AEF975B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAAD7F88DEF2092DA3FF94C49F4607E0 /* Pods-C2Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-C2Tests/Pods-C2Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 13.4;
+				MODULEMAP_FILE = "Target Support Files/Pods-C2Tests/Pods-C2Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1EEAFB95EB0B140966ABABC699F10AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD8789DB6FE8AFEA849BE781BF15D5AA /* SwiftOTP.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftOTP/SwiftOTP-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftOTP/SwiftOTP-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/SwiftOTP/SwiftOTP.modulemap";
+				PRODUCT_MODULE_NAME = SwiftOTP;
+				PRODUCT_NAME = SwiftOTP;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		24543509553D2FF5F0587B5AFB62122B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 220C1BFC9728831A3B2996AE7B6F0CAF /* Pods-C2-C2UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-C2-C2UITests/Pods-C2-C2UITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 13.4;
+				MODULEMAP_FILE = "Target Support Files/Pods-C2-C2UITests/Pods-C2-C2UITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		66AC73B6EA3E696E1AA0201376429C03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0572A8BE02A96A46C047A0B8DF66F5F4 /* Pods-C2Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-C2Tests/Pods-C2Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 13.4;
+				MODULEMAP_FILE = "Target Support Files/Pods-C2Tests/Pods-C2Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6DD955C5C5D10C1F77D3CEDBB51423C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1BBE180314167B412CD6DF9A02548AF /* Pods-C2-C2UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-C2-C2UITests/Pods-C2-C2UITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 13.4;
+				MODULEMAP_FILE = "Target Support Files/Pods-C2-C2UITests/Pods-C2-C2UITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7F50F56F080D1155005D5CA51603BCA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23F1D8162F3BF2289BE844D4DB6E5DAF /* Pods-C2.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-C2/Pods-C2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 13.4;
+				MODULEMAP_FILE = "Target Support Files/Pods-C2/Pods-C2.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9814FAE75E02DD24819C5890FD753B39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9B2131861EE581BC0CFF227F7DE1FBFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92207E2D5D5DAD4A5875BDCA73D528B5 /* Pods-C2.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-C2/Pods-C2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 13.4;
+				MODULEMAP_FILE = "Target Support Files/Pods-C2/Pods-C2.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A1DBB210B98425AC3929B60930830452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9814FAE75E02DD24819C5890FD753B39 /* Debug */,
+				A1DBB210B98425AC3929B60930830452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D3C07C12BAF03B3612438FD8697A486 /* Build configuration list for PBXNativeTarget "Pods-C2-C2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24543509553D2FF5F0587B5AFB62122B /* Debug */,
+				6DD955C5C5D10C1F77D3CEDBB51423C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2C8B6CF55D1A0ED6172DB773F78483E /* Build configuration list for PBXNativeTarget "Pods-C2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F50F56F080D1155005D5CA51603BCA5 /* Debug */,
+				9B2131861EE581BC0CFF227F7DE1FBFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF3931A8C1E0AAFECE4D7E2C66CD9DEC /* Build configuration list for PBXNativeTarget "Pods-C2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081E2358B5FE4FC772230DEF5AEF975B /* Debug */,
+				66AC73B6EA3E696E1AA0201376429C03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5BD5F55F16940B917840FC7873AB454 /* Build configuration list for PBXNativeTarget "SwiftOTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EEAFB95EB0B140966ABABC699F10AF5 /* Debug */,
+				0769A2B335A0257CD75F57A6B3A2035C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

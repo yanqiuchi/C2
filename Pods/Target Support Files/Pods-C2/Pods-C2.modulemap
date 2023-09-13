@@ -1,0 +1,6 @@
+framework module Pods_C2 {
+  umbrella header "Pods-C2-umbrella.h"
+
+  export *
+  module * { export * }
+}
