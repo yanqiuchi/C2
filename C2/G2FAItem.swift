@@ -17,7 +17,8 @@ func saveItems(_ items: [G2FAItem]) {
     do {
         let encoder = JSONEncoder()
         let data = try encoder.encode(items)
-        let url = getDocumentsDirectory().appendingPathComponent("g2faItems.json")
+        let url = getDocumentsDirectory().appendingPathComponent(
+            "g2faItems.json")
         try data.write(to: url)
     } catch {
         print("Failed to save items: \(error.localizedDescription)")
@@ -26,7 +27,8 @@ func saveItems(_ items: [G2FAItem]) {
 
 func loadItems() -> [G2FAItem]? {
     do {
-        let url = getDocumentsDirectory().appendingPathComponent("g2faItems.json")
+        let url = getDocumentsDirectory().appendingPathComponent(
+            "g2faItems.json")
         let data = try Data(contentsOf: url)
         let decoder = JSONDecoder()
         let items = try decoder.decode([G2FAItem].self, from: data)
@@ -38,6 +40,7 @@ func loadItems() -> [G2FAItem]? {
 }
 
 func getDocumentsDirectory() -> URL {
-    let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+    let paths = FileManager.default.urls(
+        for: .documentDirectory, in: .userDomainMask)
     return paths[0]
 }
